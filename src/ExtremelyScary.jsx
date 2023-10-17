@@ -17,7 +17,7 @@ export function ExtremelyScary(props) {
           <img
             src={movie.image}
             height="300px"
-            width="400px"
+            width="200px"
             alt={movie.title}
           />
           <p>{movie.year}</p>

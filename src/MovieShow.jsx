@@ -20,10 +20,18 @@ export function MovieShow() {
   return (
     <div>
       <Header />
-      <h1>{movie.title}</h1>
-      <img src={movie.image} alt={movie.title} width="400px" height="300px" />
-      <p>{movie.year}</p>
-      <p>{movie.description}</p>
+      <h1>{movie.Title}</h1>
+      <img src={movie.Poster} alt={movie.Title} />
+      <p>{movie.Plot}</p>
+      <p>Rated: {movie.Rated}</p>
+      <p>Released: {movie.year}</p>
+      <p>Language: {movie.Language}</p>
+      <p>Runtime: {movie.Runtime}</p>
+      <p>{movie.Genre}</p>
+      <p>Actors: {movie.Actors}</p>
+      <p>Directed By: {movie.Director}</p>
+      <p>Metascore: {movie.Metascore}</p>
+      <p>IMDb Rating: {movie.imdbRating}</p>
     </div>
   );
 }

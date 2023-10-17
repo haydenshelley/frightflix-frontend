@@ -12,7 +12,6 @@ export function Content() {
 
   const handleIndexMovies = () => {
     axios.get("http://localhost:3000/movies.json").then((response) => {
-      console.log(response.data);
       setMovies(response.data);
     });
   };
