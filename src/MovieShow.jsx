@@ -24,7 +24,7 @@ export function MovieShow() {
       <img src={movie.Poster} alt={movie.Title} />
       <p>{movie.Plot}</p>
       <p>Rated: {movie.Rated}</p>
-      <p>Released: {movie.year}</p>
+      <p>Released: {movie.Year}</p>
       <p>Language: {movie.Language}</p>
       <p>Runtime: {movie.Runtime}</p>
       <p>{movie.Genre}</p>
