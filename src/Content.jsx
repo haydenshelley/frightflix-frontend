@@ -1,7 +1,12 @@
+import { Route, Routes } from "react-router-dom";
+import { LandingPage } from "./LandingPage";
+
 export function Content() {
   return (
     <div>
-      <h1>FrightFlix</h1>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
     </div>
   );
 }
