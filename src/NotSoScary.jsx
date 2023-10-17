@@ -13,14 +13,16 @@ export function NotSoScary(props) {
       {notSoScaryMovies.map((movie) => (
         <div key={movie.id}>
           <Link to={`/movies/${movie.id}`}>{movie.title}</Link>
+          <br />
           <img
             src={movie.image}
-            height="100px"
-            width="100px"
+            height="300px"
+            width="400px"
             alt={movie.title}
           />
           <p>{movie.year}</p>
           <p>{movie.description}</p>
+          <hr />
         </div>
       ))}
     </div>
