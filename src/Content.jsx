@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { LandingPage } from "./LandingPage";
 import { NotSoScary } from "./NotSoScary";
+import { ExtremelyScary } from "./ExtremelyScary";
 import { Scary } from "./Scary";
 import { MovieShow } from "./MovieShow";
 
@@ -27,6 +28,10 @@ export function Content() {
           element={<NotSoScary movies={movies} />}
         />
         <Route path="/movies/scary" element={<Scary movies={movies} />} />
+        <Route
+          path="/movies/extremely-scary"
+          element={<ExtremelyScary movies={movies} />}
+        />
         <Route path="movies/:id" element={<MovieShow />} />
       </Routes>
     </div>

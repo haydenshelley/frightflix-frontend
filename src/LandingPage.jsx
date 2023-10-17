@@ -7,6 +7,8 @@ export function LandingPage() {
       <Link to="/movies/not-so-scary">Not-So-Scary</Link>
       <br />
       <Link to="/movies/scary">Scary</Link>
+      <br />
+      <Link to="/movies/extremely-scary">Extremely Scary</Link>
     </div>
   );
 }
