@@ -1,6 +1,6 @@
 import "./App.css";
-import { Content } from "./Content";
 import { BrowserRouter } from "react-router-dom";
+import { Content } from "./Content";
 
 function App() {
   return (

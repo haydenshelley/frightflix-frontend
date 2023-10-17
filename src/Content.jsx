@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { LandingPage } from "./LandingPage";
 import { NotSoScary } from "./NotSoScary";
+import { MovieShow } from "./MovieShow";
 
 export function Content() {
   const [movies, setMovies] = useState([]);
@@ -24,6 +25,7 @@ export function Content() {
           path="/movies/not-so-scary"
           element={<NotSoScary movies={movies} />}
         />
+        <Route path="movies/:id" element={<MovieShow />} />
       </Routes>
     </div>
   );
