@@ -1,3 +1,16 @@
 html {
   scroll-behavior: smooth;
 }
+
+.creepster {
+  font-family: creepster;
+}
+
+h1.creepster {
+  font-family: creepster;
+  font-size: 100px;
+}
+
+.carousel-image {
+  height: 400px; 
+}
