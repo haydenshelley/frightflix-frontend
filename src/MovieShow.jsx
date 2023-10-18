@@ -6,6 +6,7 @@ import { Header } from "./Header";
 export function MovieShow() {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     axios.get(`http://localhost:3000/movies/${id}.json`).then((response) => {
@@ -13,8 +14,12 @@ export function MovieShow() {
     });
   }, [id]);
 
-  if (!movie) {
-    return <div>Loading...</div>;
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 500);
+
+  if (isLoading) {
+    return <div>Things are getting spooky!</div>;
   }
 
   return (
