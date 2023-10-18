@@ -6,6 +6,7 @@ import { NotSoScary } from "./NotSoScary";
 import { ExtremelyScary } from "./ExtremelyScary";
 import { Scary } from "./Scary";
 import { MovieShow } from "./MovieShow";
+import { RandomMovieShow } from "./RandomMovieShow";
 
 export function Content() {
   const [movies, setMovies] = useState([]);
@@ -31,7 +32,11 @@ export function Content() {
           path="/movies/extremely-scary"
           element={<ExtremelyScary movies={movies} />}
         />
-        <Route path="movies/:id" element={<MovieShow />} />
+        <Route path="/movies/:id" element={<MovieShow />} />
+        <Route
+          path="/movies/random/:category_name"
+          element={<RandomMovieShow />}
+        />
       </Routes>
     </div>
   );

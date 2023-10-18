@@ -9,6 +9,12 @@ export function LandingPage() {
       <Link to="/movies/scary">Scary</Link>
       <br />
       <Link to="/movies/extremely-scary">Extremely Scary</Link>
+      <br />
+      <Link to="/movies/random/not-so-scary">Random Not-So-Scary</Link>
+      <br />
+      <Link to="/movies/random/scary">Random Scary</Link>
+      <br />
+      <Link to="/movies/random/extremely-scary">Random Extremely Scary</Link>
     </div>
   );
 }
