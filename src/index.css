@@ -1,18 +1,39 @@
-html {
-  scroll-behavior: smooth;
+html, body {
+  background-color: #f09008 !important;
+  font-family: creepster !important;
+  color: black !important;
 }
 
-.creepster {
-  font-family: creepster;
-}
-
-h1.creepster {
-  font-family: creepster;
+.site-name {
   font-size: 100px;
 }
 
+.choice-link {
+  text-decoration: none;
+  color: black;
+}
+
+.choice-link:hover {
+  transform: scale(2);
+}
+
+.home-link {
+  text-decoration: none;
+  color: black;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px; 
+  margin: 0 auto; 
+  padding: 20px; 
+}
+
 .carousel-image {
-  height: 400px; 
+  height: 500px;
 }
 
 .random-movies {

@@ -24,7 +24,7 @@ export function LandingPage(props) {
 
   return (
     <div>
-      <h1 className="creepster">Frightflix</h1>
+      <h1 className="site-name">Frightflix</h1>
       <div id="randomMovieCarousel" className="carousel slide">
         <div className="carousel-indicators">
           <button
@@ -102,16 +102,22 @@ export function LandingPage(props) {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      <p>Too scared to choose? Let me pick for you...</p>
+      <h3>Too scared to choose? Let me pick for you...</h3>
       <div className="random-movies">
-        <Link to="/movies/random/not-so-scary">Random Not-So-Scary</Link>
+        <Link to="/movies/random/not-so-scary" className="choice-link">
+          I want to have fun
+        </Link>
         <br />
-        <Link to="/movies/random/scary">Random Scary</Link>
+        <Link to="/movies/random/scary" className="choice-link">
+          I want to be scared
+        </Link>
         <br />
-        <Link to="/movies/random/extremely-scary">Random Extremely Scary</Link>
+        <Link to="/movies/random/extremely-scary" className="choice-link">
+          I want nightmares
+        </Link>
       </div>
-      <p>Not-So-Scary</p>
       <div id="notSoScaryCarousel" className="carousel slide">
+        <h3>All Not-So-Scary</h3>
         <div className="carousel-indicators">
           {notSoScaryMovies.map((movie, index) => (
             <button
@@ -165,8 +171,8 @@ export function LandingPage(props) {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      <p>Scary</p>
       <div id="scaryMoviesCarousel" className="carousel slide">
+        <h3>All Scary</h3>
         <div className="carousel-indicators">
           {scaryMovies.map((movie, index) => (
             <button
@@ -220,8 +226,8 @@ export function LandingPage(props) {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      <p>Extremely Scary</p>
       <div id="extremelyScaryMoviesCarousel" className="carousel slide">
+        <h3>All Extremely Scary</h3>
         <div className="carousel-indicators">
           {extremelyScaryMovies.map((movie, index) => (
             <button
