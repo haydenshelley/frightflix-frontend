@@ -14,3 +14,9 @@ h1.creepster {
 .carousel-image {
   height: 400px; 
 }
+
+.random-movies {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
