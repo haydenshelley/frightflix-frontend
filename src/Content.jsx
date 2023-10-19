@@ -22,7 +22,7 @@ export function Content() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<LandingPage movies={movies} />} />
         <Route
           path="/movies/not-so-scary"
           element={<NotSoScary movies={movies} />}
