@@ -1,5 +1,4 @@
 import "./App.css";
-import "bootstrap/dist/js/bootstrap.bundle";
 import { BrowserRouter } from "react-router-dom";
 import { Content } from "./Content";
 
