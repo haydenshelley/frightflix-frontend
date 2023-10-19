@@ -1,16 +1,24 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+
+const getRandomElements = (array, count) => {
+  const shuffled = array.sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+};
 
 export function LandingPage(props) {
-  if (!props.movies.length) {
+  const [randomMovies, setRandomMovies] = useState([]);
+
+  useEffect(() => {
+    if (randomMovies.length === 0 && props.movies.length > 0) {
+      const getRandomMovies = getRandomElements(props.movies, 3);
+      setRandomMovies(getRandomMovies);
+    }
+  }, [randomMovies, props.movies]);
+
+  if (randomMovies.length === 0 || props.movies.length === 0) {
     return <div>Loading...</div>;
   }
-
-  const getRandomElements = (array, count) => {
-    const shuffled = array.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, count);
-  };
-
-  const randomMovies = getRandomElements(props.movies, 3);
 
   const notSoScaryMovies = props.movies.filter(
     (movie) => movie.category_id === 1
